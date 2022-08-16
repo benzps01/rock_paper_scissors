@@ -8,9 +8,9 @@
         <div class="heading">Rock Paper Scissors!!!</div>
         <div class="wrapper">
             <div class="user1">
-                <input type='image' img src="rock.jpg" id="rock" onclick="userChoice('rock')"></button><br>
-                <input type='image' img src="paper.jpg" id="paper" onclick="userChoice('paper')"></button><br>
-                <input type='image' img src="scissors.png" id="scissors" onclick="userChoice('scissors')"></button>
+                <input type='image' img src="rock.jpg" id="rock" onclick="computeGame('rock')"></button><br>
+                <input type='image' img src="paper.jpg" id="paper" onclick="computeGame('paper')"></button><br>
+                <input type='image' img src="scissors.png" id="scissors" onclick="computeGame('scissors')"></button>
                 <!--<div class="input1" id="u1">Player 1</div>-->
             </div>
             <div class="user2">
@@ -18,6 +18,10 @@
             </div>
         </div>
         <div class="result" id="res">Result!!</div>
+        <div>
+            <span id="uscore">User Score: </span>
+            <span id="cscore">Computer Score: </span>
+        </div>
         <div class="bctn">
             <button id="submit" onclick="computeValue()">Let's Play!</button>
             <button id="reset" onclick="resetValue()">Reset!!</button>

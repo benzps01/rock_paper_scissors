@@ -1,14 +1,15 @@
 //const u1 = document.getElementById("u1")
 const u2 = document.getElementById("u2")
 const res = document.getElementById("res")
+const uscore = document.getElementById('uscore')
+const cscore = document.getElementById('cscore')
 const sbtn = document.getElementById('submit')
 const rbtn = document.getElementById('rock')
 const pbtn = document.getElementById('paper')
 const scibtn = document.getElementById('scissors')
 const choices = ["Rock","Paper","Scissors","Player 1","Player 2"];
-var rock = 0
-var paper = 0
-var scissors = 0
+var userScore = 0
+var compScore = 0
 
 function computeValue(){
     let p1 = Math.floor(Math.random() * 3);
@@ -38,15 +39,30 @@ function resetValue(){
     res.textContent = "Result!!"
 }
 
-function userChoice(choice){
-    if (choice == 'rock'){
-        rock += 1
+function computeGame(userchoice){
+    let cp = Math.floor(Math.random() * 3);
+    u2.textContent = choices[cp]
+
+    if(userchoice == 'rock' && choices[cp] == 'Scissors'){
+        res.textContent = "User wins!"
+        userScore += 1
     }
-    else if(choice == 'paper'){
-        paper += 1
+    else if(userchoice == 'paper' && choices[cp] == 'Rock'){
+        res.textContent = "User wins!"
+        userScore += 1
     }
-    else if(choice == "scissors"){
-        scissors += 1
+    else if(userchoice == 'scissors' && choices[cp] == 'Paper'){
+        res.textContent = "User wins!"
+        userScore += 1
     }
-    u2.textContent = rock
+    else if(userchoice == choices[cp]){
+        res.textContent = "It's a Draw!!"
+    }
+    else{
+        res.textContent = "Computer wins!"
+        compScore += 1
+    }
+
+    uscore.textContent = `User Score: ${userScore}`
+    cscore.textContent = `Computer Score: ${compScore}`
 }

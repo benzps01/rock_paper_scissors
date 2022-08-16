@@ -23,8 +23,8 @@ body{
     width: 50%;
     max-width: 1000px;
     height: 380px;
-    margin: 90px auto;
-    margin-bottom: 50px;
+    margin: 70px auto;
+    margin-bottom: 20px;
 }
 
 .user1,.user2{
@@ -80,8 +80,18 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+#uscore, #cscore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .bctn{
