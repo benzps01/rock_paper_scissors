@@ -1,0 +1,125 @@
+body{
+    background: #149ad9;
+}
+
+.heading{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.wrapper{
+    background: #0d1429;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    display: flex;
+    width: 50%;
+    max-width: 1000px;
+    height: 380px;
+    margin: 90px auto;
+    margin-bottom: 50px;
+}
+
+.user1,.user2{
+    flex: 1;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.user1{
+    background: none;
+}
+
+.user2{
+    background: none;
+}
+
+.input1{
+    background-color: green;
+}
+
+.input2{
+    background: none;
+}
+#rock, #paper, #scissors{
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:7px auto;
+}
+
+.input1,.input2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 110px auto;
+    height: 40%;
+    width: 40%;
+}
+
+.result{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.bctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-right: 50px;
+    border-radius: 20px;
+    background: white;
+}
+
+#submit:hover{
+    background: silver;
+}
+
+#submit:active{
+    background: silver;
+    transform: translateY(4px)
+}
+
+
+#reset{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 20px;
+    background: white;
+}
+
+#reset:hover{
+    background: silver;
+}
+
+#reset:active{
+    background: silver;
+    transform: translateY(4px)
+}
