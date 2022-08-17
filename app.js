@@ -34,9 +34,13 @@ function computeValue(){
     }
 }
 function resetValue(){
-    u1.textContent = choices[3]
-    u2.textContent = choices[4]
+    u2.textContent = "Computer"
     res.textContent = "Result!!"
+    uscore.textContent = `User Score: 0`
+    cscore.textContent = `Computer Score: 0`
+    userScore = 0
+    compScore = 0
+
 }
 
 function computeGame(userchoice){
@@ -65,4 +69,16 @@ function computeGame(userchoice){
 
     uscore.textContent = `User Score: ${userScore}`
     cscore.textContent = `Computer Score: ${compScore}`
+}
+
+function winnerCheck(){
+    if (userScore > compScore){
+        res.textContent = "User is the Winner!!"
+    }
+    else if (userScore == compScore){
+        res.textContent = "No winner!!"
+    }
+    else {
+        res.textContent = "Computer is the winner!"
+    }
 }
