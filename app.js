@@ -47,15 +47,15 @@ function computeGame(userchoice){
     let cp = Math.floor(Math.random() * 3);
     u2.textContent = choices[cp]
 
-    if(userchoice == 'rock' && choices[cp] == 'Scissors'){
+    if(userchoice == 'Rock' && choices[cp] == 'Scissors'){
         res.textContent = "User wins!"
         userScore += 1
     }
-    else if(userchoice == 'paper' && choices[cp] == 'Rock'){
+    else if(userchoice == 'Paper' && choices[cp] == 'Rock'){
         res.textContent = "User wins!"
         userScore += 1
     }
-    else if(userchoice == 'scissors' && choices[cp] == 'Paper'){
+    else if(userchoice == 'Scissors' && choices[cp] == 'Paper'){
         res.textContent = "User wins!"
         userScore += 1
     }
